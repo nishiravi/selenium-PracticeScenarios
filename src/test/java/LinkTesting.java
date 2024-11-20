@@ -1,3 +1,5 @@
+package test.java;
+
 import java.util.Iterator;
 import java.util.Set;
 
@@ -31,7 +33,7 @@ public class LinkTesting {
 		}
 			Set<String> windows = driver.getWindowHandles();
 			Iterator<String> it = windows.iterator();
-			while (it.hasNext()) // check if their is window present
+			while (it.hasNext()) // check if there is window present
 			{
 				driver.switchTo().window(it.next());
 				System.out.println("title is:  " + driver.getTitle());
