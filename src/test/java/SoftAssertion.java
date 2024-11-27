@@ -1,3 +1,5 @@
+package test.java;
+
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
@@ -24,9 +26,7 @@ public class SoftAssertion {
 		conn.setRequestMethod("HEAD");
 		int responseCode=conn.getResponseCode();
 		System.out.println(responseCode);
-		a.assertTrue(responseCode<400,"Link broken is"+links.get(i).getText()+" with code "+responseCode);
-		
-		
+		a.assertTrue(responseCode<400,"Link broken is  "+links.get(i).getText()+" with code "+responseCode);
 	}
 	a.assertAll("error message bellow");
 	}
